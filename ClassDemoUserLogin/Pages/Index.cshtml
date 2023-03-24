@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Velkommen @Model.Name</h2>
+        <p>bla bla .....</p>
+
+        @if(Model.IsAdmin){
+            <p>Som admin kan du også se dette</p>
+        }
+    </div>
+</div>
